@@ -1,0 +1,175 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "Creative Designer",
+    "mission": "Create a 'Contract-Ready' industrial cleaning website that exudes trust, efficiency, and eco-friendliness."
+  },
+  "theme": {
+    "mode": "light",
+    "style": "Industrial Purity",
+    "emotional_tone": "Trustworthy, Efficient, Eco-friendly, Industrial-Strength"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Barlow Condensed, sans-serif",
+      "weights": ["700", "900"],
+      "usage": "Use for all section titles, hero text, and major calls to action. Tight tracking (-0.02em).",
+      "fallback": "Oswald, sans-serif"
+    },
+    "body": {
+      "font_family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Use for all paragraph text, navigation, and UI elements.",
+      "fallback": "system-ui, sans-serif"
+    }
+  },
+  "colors": {
+    "primary": {
+      "name": "Industrial Slate",
+      "hex": "#0F172A",
+      "tailwind": "bg-slate-900",
+      "usage": "Main headings, footer, primary buttons (hover state), borders for high contrast."
+    },
+    "secondary": {
+      "name": "Eco Green",
+      "hex": "#16A34A",
+      "tailwind": "bg-green-600",
+      "usage": "Trust badges, success states, 'Eco-Friendly' highlights."
+    },
+    "accent": {
+      "name": "Trust Blue",
+      "hex": "#0EA5E9",
+      "tailwind": "bg-sky-500",
+      "usage": "Primary Buttons, Links, Icons, Progress bars."
+    },
+    "background": {
+      "name": "Sterile White",
+      "hex": "#F8FAFC",
+      "tailwind": "bg-slate-50",
+      "usage": "Page background, section backgrounds."
+    },
+    "surface": {
+      "name": "Pure White",
+      "hex": "#FFFFFF",
+      "tailwind": "bg-white",
+      "usage": "Cards, Form backgrounds, Modal backgrounds."
+    },
+    "text": {
+      "primary": "#0F172A",
+      "secondary": "#475569",
+      "muted": "#94A3B8"
+    }
+  },
+  "layout_strategies": {
+    "hero": {
+      "type": "Tetris Grid",
+      "description": "Asymmetrical grid showcasing different facets of the business (Street Cleaning vs Office Cleaning).",
+      "structure": "grid-cols-1 md:grid-cols-12 gap-4",
+      "elements": [
+        "Main Headline (col-span-8)",
+        "Primary Image (Street Sweeper) (col-span-4 row-span-2)",
+        "Secondary Image (Office) (col-span-4)",
+        "Trust Badge Block (col-span-4)"
+      ]
+    },
+    "services": {
+      "type": "Bento Grid",
+      "description": "Dense grid for services. High density to show capability breadth.",
+      "structure": "grid-cols-1 md:grid-cols-3 gap-6"
+    },
+    "trust_badges": {
+      "type": "Marquee",
+      "description": "Infinite scroll of certifications (MBE, SBE, Green Seal, OSHA).",
+      "style": "Greyscale opacity-50 hover:opacity-100 transition-opacity"
+    }
+  },
+  "components": {
+    "buttons": {
+      "style": "Sharp or slightly rounded (rounded-md). High contrast.",
+      "primary": "bg-sky-500 text-white hover:bg-slate-900 transition-colors shadow-lg shadow-sky-500/20",
+      "secondary": "border-2 border-slate-200 text-slate-900 hover:border-slate-900 hover:bg-slate-50"
+    },
+    "cards": {
+      "style": "Tech Borders",
+      "classes": "bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-500/50 transition-all duration-300"
+    },
+    "forms": {
+      "style": "Clean & Validated",
+      "classes": "bg-slate-50 border-slate-200 focus:border-sky-500 focus:ring-sky-500 rounded-md"
+    }
+  },
+  "image_urls": {
+    "hero_primary": {
+      "url": "https://images.unsplash.com/photo-1741249978306-3714629a276f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc3RyZWV0JTIwc3dlZXBlciUyMHRydWNrfGVufDB8fHx8MTc3MDQxNjk0OHww&ixlib=rb-4.1.0&q=85",
+      "description": "Industrial Street Sweeper Truck - Shows heavy duty capability",
+      "category": "hero"
+    },
+    "hero_secondary": {
+      "url": "https://images.unsplash.com/photo-1581374820583-317d45555a82?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwb2ZmaWNlJTIwY2xlYW5pbmclMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzcwNDE2OTQ2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Clean Modern Office - Shows commercial capability",
+      "category": "hero"
+    },
+    "services_commercial": {
+      "url": "https://images.unsplash.com/photo-1700809888987-cf2b29ecbd2c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwyfHxjb21tZXJjaWFsJTIwb2ZmaWNlJTIwY2xlYW5pbmclMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzcwNDE2OTQ2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Office with plant - Eco friendly commercial cleaning",
+      "category": "services"
+    },
+    "services_street": {
+      "url": "https://images.unsplash.com/photo-1764981966665-1abf644d10a4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxpbmR1c3RyaWFsJTIwc3RyZWV0JTIwc3dlZXBlciUyMHRydWNrfGVufDB8fHx8MTc3MDQxNjk0OHww&ixlib=rb-4.1.0&q=85",
+      "description": "Street Sweeper in action",
+      "category": "services"
+    },
+    "services_construction": {
+      "url": "https://images.unsplash.com/photo-1762438441472-be21c5148e8a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwY2xlYW51cCUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NzA0MTY5NTd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Construction worker digging - Post construction cleanup",
+      "category": "services"
+    },
+    "team_member_1": {
+      "url": "https://images.unsplash.com/photo-1691496550053-80260c93db8f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBqYW5pdG9yaWFsJTIwdGVhbSUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MDQxNjk3OHww&ixlib=rb-4.1.0&q=85",
+      "description": "Woman cleaning mirror - Detail oriented",
+      "category": "team"
+    },
+    "before_after_dirty": {
+      "url": "https://images.unsplash.com/photo-1769340051107-65494cda0a50?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwY2xlYW51cCUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NzA0MTY5NTd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Messy construction site (Before)",
+      "category": "gallery"
+    },
+    "before_after_clean": {
+      "url": "https://images.unsplash.com/photo-1646215993316-c98f642303ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwzfHxjb21tZXJjaWFsJTIwb2ZmaWNlJTIwY2xlYW5pbmclMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzcwNDE2OTQ2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Spotless office (After)",
+      "category": "gallery"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use 'Barlow Condensed' for all headings to give a strong, industrial feel.",
+    "Implement the 'Tetris Grid' for the Hero section to avoid a generic look.",
+    "Use the 'Eco Green' (#16A34A) sparingly for trust badges and eco-friendly highlights.",
+    "Ensure the 'Government Contracts' page is text-heavy and data-dense (tables for NAICS codes).",
+    "Use 'lucide-react' icons for services (e.g., Broom, Truck, Building, HardHat).",
+    "The 'Before/After' gallery should use a slider component if possible, or a side-by-side comparison card.",
+    "Forms must have validation and look 'official' (clean borders, clear labels).",
+    "Do NOT use gradients for backgrounds. Use solid colors or subtle noise textures.",
+    "Ensure high contrast for all text (WCAG AA compliance) as this is a business/gov site."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: 'transition: all'. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add '.App { text-align: center; }' in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use 'sonner' for toasts. Sonner component are located in '/app/src/components/ui/sonner.tsx'"
+  ]
+}
