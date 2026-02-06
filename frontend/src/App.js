@@ -1,38 +1,40 @@
-import { useEffect } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import { Toaster } from "sonner";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+// Layout Components
+import { Navbar } from "./components/layout/Navbar";
+import { Footer } from "./components/layout/Footer";
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
+// Pages
+import HomePage from "./pages/HomePage";
+import ServicesPage from "./pages/ServicesPage";
+import WhyChooseUsPage from "./pages/WhyChooseUsPage";
+import ContractsPage from "./pages/ContractsPage";
+import TestimonialsPage from "./pages/TestimonialsPage";
+import PricingPage from "./pages/PricingPage";
+import ContactPage from "./pages/ContactPage";
+import BlogPage from "./pages/BlogPage";
+import PrivacyPage from "./pages/PrivacyPage";
+import TermsPage from "./pages/TermsPage";
 
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
+// Layout wrapper component
+const Layout = ({ children }) => {
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-1">{children}</main>
+      <Footer />
+    </div>
+  );
+};
+
+// Layout for legal pages (no footer nav)
+const LegalLayout = ({ children }) => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <main className="flex-1">{children}</main>
+      <Footer />
     </div>
   );
 };
@@ -41,10 +43,22 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Toaster position="top-right" richColors closeButton />
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
+          {/* Main pages with full layout */}
+          <Route path="/" element={<Layout><HomePage /></Layout>} />
+          <Route path="/services" element={<Layout><ServicesPage /></Layout>} />
+          <Route path="/why-choose-us" element={<Layout><WhyChooseUsPage /></Layout>} />
+          <Route path="/contracts" element={<Layout><ContractsPage /></Layout>} />
+          <Route path="/testimonials" element={<Layout><TestimonialsPage /></Layout>} />
+          <Route path="/pricing" element={<Layout><PricingPage /></Layout>} />
+          <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
+          <Route path="/blog" element={<Layout><BlogPage /></Layout>} />
+          <Route path="/blog/:slug" element={<Layout><BlogPage /></Layout>} />
+          
+          {/* Legal pages */}
+          <Route path="/privacy" element={<LegalLayout><PrivacyPage /></LegalLayout>} />
+          <Route path="/terms" element={<LegalLayout><TermsPage /></LegalLayout>} />
         </Routes>
       </BrowserRouter>
     </div>
