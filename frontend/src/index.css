@@ -200,3 +200,8 @@ html {
     display: contents !important;
   }
 }
+
+/* Hide platform badge */
+#emergent-badge {
+  display: none !important;
+}
