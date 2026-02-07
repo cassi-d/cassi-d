@@ -215,14 +215,14 @@ const ContractsPage = () => {
             please contact our contracts department.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:contracts@cleanstreetsnj.com">
+            <a href="mailto:contracts@dirdia.com">
               <Button 
                 size="lg"
                 className="w-full sm:w-auto bg-sky-500 hover:bg-sky-600 text-white"
                 data-testid="email-contracts-btn"
               >
                 <Mail className="w-4 h-4 mr-2" />
-                contracts@cleanstreetsnj.com
+                contracts@dirdia.com
               </Button>
             </a>
             <Link to="/contact">
