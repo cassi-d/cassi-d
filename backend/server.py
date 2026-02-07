@@ -76,7 +76,7 @@ class GalleryItem(BaseModel):
 # Routes
 @api_router.get("/")
 async def root():
-    return {"message": "CleanStreets NJ API"}
+    return {"message": "Dirdia API"}
 
 # Contact endpoints
 @api_router.post("/contact", response_model=ContactSubmission)
@@ -174,7 +174,7 @@ def get_seed_testimonials() -> List[Testimonial]:
             id="1",
             client_name="Michael Rodriguez",
             company="Bergen County Property Management",
-            content="Reliable, professional, and always on time. Our facility has never looked better. CleanStreets NJ has been our go-to cleaning partner for over three years.",
+            content="Reliable, professional, and always on time. Our facility has never looked better. Dirdia has been our go-to cleaning partner for over three years.",
             rating=5
         ),
         Testimonial(

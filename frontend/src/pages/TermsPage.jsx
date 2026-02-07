@@ -69,7 +69,7 @@ const TermsPage = () => {
               5. Insurance & Liability
             </h2>
             <p>
-              CleanStreets NJ maintains comprehensive general liability insurance and workers' 
+              Dirdia maintains comprehensive general liability insurance and workers' 
               compensation coverage. Certificates of insurance are available upon request.
             </p>
 
@@ -88,7 +88,7 @@ const TermsPage = () => {
               For questions about these terms, please contact us at:
             </p>
             <p>
-              <strong>Email:</strong> info@cleanstreetsnj.com<br />
+              <strong>Email:</strong> info@dirdia.com<br />
               <strong>Phone:</strong> (732) 555-1234
             </p>
           </div>

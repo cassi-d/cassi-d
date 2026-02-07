@@ -75,7 +75,7 @@ const PrivacyPage = () => {
               If you have questions about this Privacy Policy, please contact us at:
             </p>
             <p>
-              <strong>Email:</strong> info@cleanstreetsnj.com<br />
+              <strong>Email:</strong> info@dirdia.com<br />
               <strong>Phone:</strong> (732) 555-1234
             </p>
           </div>

@@ -118,7 +118,7 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-white text-sm font-medium">info@cleanstreetsnj.com</p>
+                  <p className="text-white text-sm font-medium">info@dirdia.com</p>
                   <p className="text-slate-400 text-xs">24/7 Email Support</p>
                 </div>
               </li>
