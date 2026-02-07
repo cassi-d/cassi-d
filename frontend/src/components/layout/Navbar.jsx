@@ -31,10 +31,7 @@ export const Navbar = () => {
             </div>
             <div>
               <span className="font-['Barlow_Condensed'] font-bold text-xl text-slate-900 tracking-tight">
-                CleanStreets
-              </span>
-              <span className="font-['Barlow_Condensed'] font-bold text-xl text-sky-500 tracking-tight ml-1">
-                NJ
+                Dirdia
               </span>
             </div>
           </Link>

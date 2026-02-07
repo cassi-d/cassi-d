@@ -83,7 +83,7 @@ const WhyChooseUsPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-['Barlow_Condensed'] font-bold text-3xl sm:text-4xl text-slate-900 mb-4">
-              The CleanStreets NJ Difference
+              The Dirdia Difference
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
               Our commitment to quality and professionalism has made us a trusted partner 
@@ -210,7 +210,7 @@ const WhyChooseUsPage = () => {
             Experience the Difference
           </h2>
           <p className="text-slate-600 text-lg mb-8">
-            Join the many businesses and municipalities who trust CleanStreets NJ for their cleaning needs.
+            Join the many businesses and municipalities who trust Dirdia for their cleaning needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">

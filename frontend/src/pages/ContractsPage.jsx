@@ -77,7 +77,7 @@ const ContractsPage = () => {
                     <TableBody>
                       <TableRow>
                         <TableCell className="font-medium text-slate-900">Company Name</TableCell>
-                        <TableCell className="text-slate-600">CleanStreets NJ LLC</TableCell>
+                        <TableCell className="text-slate-600">Dirdia LLC</TableCell>
                       </TableRow>
                       <TableRow>
                         <TableCell className="font-medium text-slate-900">NAICS Codes</TableCell>

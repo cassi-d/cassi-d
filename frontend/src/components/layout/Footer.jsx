@@ -17,16 +17,13 @@ export const Footer = () => {
               </div>
               <div>
                 <span className="font-['Barlow_Condensed'] font-bold text-xl text-white tracking-tight">
-                  CleanStreets
-                </span>
-                <span className="font-['Barlow_Condensed'] font-bold text-xl text-sky-400 tracking-tight ml-1">
-                  NJ
+                  Dirdia
                 </span>
               </div>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               Professional commercial & street cleaning services across New Jersey. 
-              Licensed, insured, and contract-ready.
+              Licensed, insured, and contract-ready. Dirdia delivers excellence.
             </p>
             <div className="flex items-center gap-4">
               <a 
@@ -140,7 +137,7 @@ export const Footer = () => {
         <div className="py-6 border-t border-slate-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm">
-              © {currentYear} CleanStreets NJ. All rights reserved.
+              © {currentYear} Dirdia. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <Link to="/privacy" className="text-slate-400 hover:text-white text-sm transition-colors">

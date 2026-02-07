@@ -199,7 +199,7 @@ const TestimonialsPage = () => {
             Ready for Your Transformation?
           </h2>
           <p className="text-slate-300 text-lg mb-8">
-            Join our satisfied clients and experience the CleanStreets NJ difference.
+            Join our satisfied clients and experience the Dirdia difference.
           </p>
           <Link to="/contact">
             <Button 
