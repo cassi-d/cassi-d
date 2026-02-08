@@ -191,7 +191,7 @@ const PricingPage = () => {
                       className="w-full border-2 border-white/30 text-white hover:bg-white/10"
                     >
                       <Phone className="w-4 h-4 mr-2" />
-                      (732) 555-1234
+                      (240) 496-7636
                     </Button>
                   </a>
                 </div>

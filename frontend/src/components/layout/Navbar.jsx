@@ -12,9 +12,7 @@ export const Navbar = () => {
     { name: 'Services', path: '/services' },
     { name: 'Why Choose Us', path: '/why-choose-us' },
     { name: 'Contracts', path: '/contracts' },
-    { name: 'Testimonials', path: '/testimonials' },
     { name: 'Pricing', path: '/pricing' },
-    { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -56,9 +54,9 @@ export const Navbar = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <a href="tel:+17325551234" className="flex items-center gap-2 text-slate-600 hover:text-slate-900">
+            <a href="tel:+12404967636" className="flex items-center gap-2 text-slate-600 hover:text-slate-900">
               <Phone className="w-4 h-4" />
-              <span className="text-sm font-medium">(732) 555-1234</span>
+              <span className="text-sm font-medium">(240) 496-7636</span>
             </a>
             <Link to="/contact">
               <Button 
@@ -105,11 +103,11 @@ export const Navbar = () => {
               ))}
               <div className="mt-4 px-4 flex flex-col gap-3">
                 <a 
-                  href="tel:+17325551234" 
+                  href="tel:+12404967636" 
                   className="flex items-center justify-center gap-2 py-3 border border-slate-200 rounded-lg text-slate-600"
                 >
                   <Phone className="w-4 h-4" />
-                  <span className="text-sm font-medium">(732) 555-1234</span>
+                  <span className="text-sm font-medium">(240) 496-7636</span>
                 </a>
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
                   <Button className="w-full bg-sky-500 hover:bg-slate-900 text-white">

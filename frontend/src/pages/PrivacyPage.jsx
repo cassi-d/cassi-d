@@ -76,7 +76,7 @@ const PrivacyPage = () => {
             </p>
             <p>
               <strong>Email:</strong> info@dirdia.com<br />
-              <strong>Phone:</strong> (732) 555-1234
+              <strong>Phone:</strong> (240) 496-7636
             </p>
           </div>
         </div>

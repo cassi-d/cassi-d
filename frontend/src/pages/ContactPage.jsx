@@ -75,13 +75,13 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: 'Phone',
-      primary: '(732) 555-1234',
+      primary: '(240) 496-7636',
       secondary: 'Mon-Fri 8am-6pm EST',
     },
     {
       icon: Mail,
       title: 'Email',
-      primary: 'info@dirdia.com',
+      primary: 'basscass858@gmail.com',
       secondary: '24/7 Email Support',
     },
     {

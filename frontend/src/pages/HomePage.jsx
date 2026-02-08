@@ -287,14 +287,14 @@ const HomePage = () => {
                 Request a Quote
               </Button>
             </Link>
-            <a href="tel:+17325551234">
+            <a href="tel:+12404967636">
               <Button 
                 size="lg"
                 variant="outline"
                 className="w-full sm:w-auto border-2 border-slate-200 text-slate-900 hover:bg-slate-50"
               >
                 <Phone className="w-4 h-4 mr-2" />
-                (732) 555-1234
+                (732) 555-4321
               </Button>
             </a>
           </div>
