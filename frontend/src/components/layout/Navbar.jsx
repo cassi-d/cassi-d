@@ -24,14 +24,11 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3" data-testid="logo-link">
-            <div className="w-10 h-10 bg-sky-500 rounded-lg flex items-center justify-center">
-              <Building2 className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <span className="font-['Barlow_Condensed'] font-bold text-xl text-slate-900 tracking-tight">
-                Dirdia
-              </span>
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_cleanstreets-nj/artifacts/gdj7y6sx_ChatGPT%20Image%20Feb%207%2C%202026%2C%2008_53_09%20PM.png" 
+              alt="Dirdia Cleaning"
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
