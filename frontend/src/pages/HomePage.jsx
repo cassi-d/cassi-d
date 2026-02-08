@@ -294,7 +294,7 @@ const HomePage = () => {
                 className="w-full sm:w-auto border-2 border-slate-200 text-slate-900 hover:bg-slate-50"
               >
                 <Phone className="w-4 h-4 mr-2" />
-                (732) 555-4321
+                (240) 496-7636
               </Button>
             </a>
           </div>
