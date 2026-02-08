@@ -184,7 +184,7 @@ const PricingPage = () => {
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
-                  <a href="tel:+17325551234">
+                  <a href="tel:+12404967636">
                     <Button 
                       size="lg"
                       variant="outline"
