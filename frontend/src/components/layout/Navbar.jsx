@@ -10,9 +10,9 @@ export const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
+    { name: 'Industries', path: '/industries' },
     { name: 'Why Choose Us', path: '/why-choose-us' },
-    { name: 'Contracts', path: '/contracts' },
-    { name: 'Pricing', path: '/pricing' },
+    { name: 'Portfolio', path: '/portfolio' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -25,7 +25,7 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3" data-testid="logo-link">
             <img 
-              src="https://customer-assets.emergentagent.com/job_cleanstreets-nj/artifacts/gdj7y6sx_ChatGPT%20Image%20Feb%207%2C%202026%2C%2008_53_09%20PM.png" 
+              src="https://customer-assets.emergentagent.com/job_cleanstreets-nj/artifacts/n9fdovtq_Untitled_design-removebg-preview.png" 
               alt="Dirdia Cleaning"
               className="h-12 w-auto"
             />

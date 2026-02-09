@@ -13,7 +13,7 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-6">
               <img 
-                src="https://customer-assets.emergentagent.com/job_cleanstreets-nj/artifacts/gdj7y6sx_ChatGPT%20Image%20Feb%207%2C%202026%2C%2008_53_09%20PM.png" 
+                src="https://customer-assets.emergentagent.com/job_cleanstreets-nj/artifacts/n9fdovtq_Untitled_design-removebg-preview.png" 
                 alt="Dirdia Cleaning"
                 className="h-12 w-auto"
               />
