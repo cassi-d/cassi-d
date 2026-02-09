@@ -10,11 +10,14 @@ import { Footer } from "./components/layout/Footer";
 import HomePage from "./pages/HomePage";
 import ServicesPage from "./pages/ServicesPage";
 import WhyChooseUsPage from "./pages/WhyChooseUsPage";
-import ContractsPage from "./pages/ContractsPage";
-import TestimonialsPage from "./pages/TestimonialsPage";
-import PricingPage from "./pages/PricingPage";
+import IndustriesPage from "./pages/IndustriesPage";
+import IndustryDetailPage from "./pages/IndustryDetailPage";
+import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
+import ContractsPage from "./pages/ContractsPage";
+import PricingPage from "./pages/PricingPage";
 import BlogPage from "./pages/BlogPage";
+import TestimonialsPage from "./pages/TestimonialsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
 
@@ -48,10 +51,13 @@ function App() {
           {/* Main pages with full layout */}
           <Route path="/" element={<Layout><HomePage /></Layout>} />
           <Route path="/services" element={<Layout><ServicesPage /></Layout>} />
+          <Route path="/industries" element={<Layout><IndustriesPage /></Layout>} />
+          <Route path="/industries/:industry" element={<Layout><IndustryDetailPage /></Layout>} />
           <Route path="/why-choose-us" element={<Layout><WhyChooseUsPage /></Layout>} />
+          <Route path="/portfolio" element={<Layout><PortfolioPage /></Layout>} />
           <Route path="/contracts" element={<Layout><ContractsPage /></Layout>} />
-          <Route path="/testimonials" element={<Layout><TestimonialsPage /></Layout>} />
           <Route path="/pricing" element={<Layout><PricingPage /></Layout>} />
+          <Route path="/testimonials" element={<Layout><TestimonialsPage /></Layout>} />
           <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
           <Route path="/blog" element={<Layout><BlogPage /></Layout>} />
           <Route path="/blog/:slug" element={<Layout><BlogPage /></Layout>} />
