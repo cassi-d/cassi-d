@@ -123,7 +123,7 @@ const HomePage = () => {
                     className="w-full h-48 object-cover rounded-xl shadow-2xl"
                   />
                   <div className="bg-sky-500 rounded-xl p-6 text-white">
-                    <p className="font-['Barlow_Condensed'] font-bold text-3xl">15+</p>
+                    <p className="font-['Barlow_Condensed'] font-bold text-3xl">3+</p>
                     <p className="text-sm opacity-90">Years of Excellence</p>
                   </div>
                 </div>
