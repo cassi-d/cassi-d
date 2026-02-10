@@ -27,7 +27,7 @@ export const Navbar = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_cleanstreets-nj/artifacts/n9fdovtq_Untitled_design-removebg-preview.png" 
               alt="Dirdia Cleaning"
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
