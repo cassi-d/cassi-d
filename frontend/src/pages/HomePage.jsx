@@ -178,7 +178,7 @@ const HomePage = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1691496550053-80260c93db8f?w=600"
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600"
                 alt="Professional Cleaning Team"
                 className="rounded-xl shadow-2xl w-full"
               />
