@@ -91,6 +91,62 @@ async def create_contact(input: ContactSubmissionCreate):
     contact_obj = ContactSubmission(**input.model_dump())
     doc = contact_obj.model_dump()
     await db.contacts.insert_one(doc)
+    
+    # Send email notification
+    try:
+        html_content = f"""
+        <html>
+        <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <div style="background-color: #0EA5E9; padding: 20px; text-align: center;">
+                <h1 style="color: white; margin: 0;">New Contact Form Submission</h1>
+            </div>
+            <div style="padding: 30px; background-color: #f8fafc;">
+                <h2 style="color: #0f172a; margin-top: 0;">Contact Details</h2>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: #475569;">Name:</td>
+                        <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; color: #0f172a;">{input.name}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: #475569;">Organization:</td>
+                        <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; color: #0f172a;">{input.organization or 'N/A'}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: #475569;">Email:</td>
+                        <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; color: #0f172a;"><a href="mailto:{input.email}">{input.email}</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: #475569;">Phone:</td>
+                        <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; color: #0f172a;">{input.phone or 'N/A'}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: #475569;">Service Type:</td>
+                        <td style="padding: 10px 0; border-bottom: 1px solid #e2e8f0; color: #0f172a;">{input.service_type}</td>
+                    </tr>
+                </table>
+                <h3 style="color: #0f172a; margin-top: 20px;">Message:</h3>
+                <p style="background-color: white; padding: 15px; border-radius: 8px; color: #475569; line-height: 1.6;">{input.message}</p>
+            </div>
+            <div style="background-color: #0f172a; padding: 15px; text-align: center;">
+                <p style="color: #94a3b8; margin: 0; font-size: 12px;">Dirdia Commercial Cleaning Services</p>
+            </div>
+        </body>
+        </html>
+        """
+        
+        params = {
+            "from": SENDER_EMAIL,
+            "to": [NOTIFY_EMAIL],
+            "subject": f"New Contact: {input.name} - {input.service_type}",
+            "html": html_content
+        }
+        
+        await asyncio.to_thread(resend.Emails.send, params)
+        logger.info(f"Email notification sent for contact: {input.name}")
+    except Exception as e:
+        logger.error(f"Failed to send email notification: {str(e)}")
+        # Don't fail the request if email fails - contact is still saved
+    
     return contact_obj
 
 @api_router.get("/contacts", response_model=List[ContactSubmission])
