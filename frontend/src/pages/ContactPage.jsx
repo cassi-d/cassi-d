@@ -81,7 +81,7 @@ const ContactPage = () => {
     {
       icon: Mail,
       title: 'Email',
-      primary: 'basscass858@gmail.com',
+      primary: 'info@dirdia.com',
       secondary: '24/7 Email Support',
     },
     {
