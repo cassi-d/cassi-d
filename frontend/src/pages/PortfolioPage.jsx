@@ -89,24 +89,24 @@ const PortfolioPage = () => {
   const beforeAfterGallery = [
     {
       id: 1,
-      title: "Office Floor Restoration",
+      title: "Office Floor Deep Clean",
       category: "Commercial",
-      before: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
+      before: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600",
       after: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600"
     },
     {
       id: 2,
-      title: "Warehouse Deep Clean",
-      category: "Industrial",
-      before: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600",
-      after: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600"
+      title: "Parking Lot Sweeping",
+      category: "Street Cleaning",
+      before: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600",
+      after: "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=600"
     },
     {
       id: 3,
-      title: "Medical Facility Sanitization",
-      category: "Healthcare",
-      before: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600",
-      after: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600"
+      title: "Commercial Kitchen Sanitization",
+      category: "Food Service",
+      before: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600",
+      after: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600"
     }
   ];
 
