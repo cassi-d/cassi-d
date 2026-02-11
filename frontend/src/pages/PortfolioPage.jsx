@@ -76,23 +76,6 @@ const PortfolioPage = () => {
       image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600"
     }
   ];
-      challenge: "Meet Joint Commission standards while reducing healthcare-associated infections and staying within budget.",
-      solution: "Developed custom protocols aligned with CDC guidelines. Implemented UV-C disinfection for high-risk areas and real-time quality monitoring.",
-      results: ["50% reduction in HAIs", "Passed Joint Commission audit", "35% cost savings"],
-      image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600"
-    },
-    {
-      id: 3,
-      title: "Retail Chain Excellence",
-      client: "Multi-Location Retail Brand",
-      location: "Statewide NJ",
-      size: "15 locations",
-      challenge: "Ensure consistent cleaning quality across 15 retail locations with different layouts and operating hours.",
-      solution: "Assigned dedicated teams, implemented photo-verified checklists, and conducted surprise audits. Created location-specific cleaning protocols.",
-      results: ["25% increase in customer satisfaction", "Consistent 95%+ audit scores", "Zero customer complaints"],
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600"
-    }
-  ];
 
   const beforeAfterGallery = [
     {
