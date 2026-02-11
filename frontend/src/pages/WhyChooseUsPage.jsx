@@ -287,11 +287,11 @@ const WhyChooseUsPage = () => {
             ))}
           </div>
           <blockquote className="font-['Barlow_Condensed'] text-2xl sm:text-3xl text-slate-900 mb-6">
-            "Dirdia has been our go-to cleaning partner for over three years. They understand 
-            the unique needs of commercial properties and consistently deliver exceptional results."
+            "Dirdia came in hungry and delivered. Our coworking space has never been cleaner. 
+            They're responsive, flexible, and actually care about getting it right."
           </blockquote>
           <p className="text-slate-600">
-            — Michael Rodriguez, Facilities Director, Bergen County Property Management
+            — Marcus Johnson, Office Manager, StartUp Hub Coworking
           </p>
           <Link to="/portfolio" className="inline-flex items-center gap-2 text-sky-500 font-medium mt-8 hover:text-sky-600 transition-colors">
             Read more testimonials
