@@ -14,60 +14,68 @@ const PortfolioPage = () => {
   const testimonials = [
     {
       id: 1,
-      client_name: "Michael Rodriguez",
-      title: "Facilities Director",
-      company: "Bergen County Property Management",
-      content: "Dirdia has been our go-to cleaning partner for over three years. They understand the unique needs of commercial properties and consistently deliver exceptional results. Our tenants have noticed the difference.",
+      client_name: "Marcus Johnson",
+      title: "Office Manager",
+      company: "StartUp Hub Coworking",
+      content: "Dirdia came in hungry and delivered. Our coworking space has never been cleaner. They're responsive, flexible, and actually care about getting it right.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100"
     },
     {
       id: 2,
-      client_name: "Sarah Thompson",
-      title: "Operations Manager",
-      company: "Newark School District",
-      content: "Working with Dirdia transformed our schools. They understand compliance, documentation, and most importantly, how to keep our students safe. The reduction in sick days has been remarkable.",
+      client_name: "Lisa Park",
+      title: "Owner",
+      company: "Park's Dental Practice",
+      content: "Finding a reliable cleaning service was tough until we found Dirdia. They show up on time, follow our protocols, and the price is fair. Exactly what a small practice needs.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
     },
     {
       id: 3,
-      client_name: "James Chen",
-      title: "Municipal Works Director",
-      company: "Jersey City Municipal Works",
-      content: "Outstanding street sweeping services. Dirdia helped us maintain clean public spaces while staying within budget. Their professionalism and reliability make them an ideal government contractor.",
+      client_name: "David Martinez",
+      title: "Property Manager",
+      company: "Riverside Apartments",
+      content: "These guys are the real deal. Common areas are spotless, they communicate well, and they've been flexible when we needed last-minute help. Highly recommend.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
-    },
-    {
-      id: 4,
-      client_name: "Dr. Patricia Williams",
-      title: "Practice Administrator",
-      company: "Garden State Medical Center",
-      content: "In healthcare, cleanliness isn't optional—it's critical. Dirdia's team understands infection control protocols and consistently meets our high standards. We passed our last inspection with flying colors.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100"
     }
   ];
 
   const caseStudies = [
     {
       id: 1,
-      title: "Tech Campus Transformation",
-      client: "Fortune 500 Tech Company",
-      location: "Princeton, NJ",
-      size: "250,000 sq ft",
-      challenge: "Needed 24/7 cleaning for a campus with multiple buildings, a cafeteria, and fitness center without disrupting employees.",
-      solution: "Implemented a rotating shift schedule with dedicated teams for each building. Used color-coded microfiber system to prevent cross-contamination.",
-      results: ["98% employee satisfaction", "40% reduction in cleaning costs", "Zero health code violations"],
+      title: "Coworking Space Launch",
+      client: "Local Coworking Startup",
+      location: "Newark, NJ",
+      size: "5,000 sq ft",
+      challenge: "New coworking space needed move-in ready cleaning and ongoing maintenance on a startup budget.",
+      solution: "Provided deep clean before opening and set up flexible weekly service that scales with their membership.",
+      results: ["Ready for launch day", "Under budget", "5-star Google reviews mention cleanliness"],
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600"
     },
     {
       id: 2,
-      title: "Hospital-Grade Cleaning",
-      client: "Regional Medical Center",
-      location: "Trenton, NJ",
-      size: "150,000 sq ft",
+      title: "Dental Office Deep Clean",
+      client: "Family Dental Practice",
+      location: "Jersey City, NJ",
+      size: "2,500 sq ft",
+      challenge: "Dental office needed healthcare-grade cleaning but couldn't afford big commercial rates.",
+      solution: "Created a custom cleaning plan focused on high-touch areas and sterilization protocols at a competitive price.",
+      results: ["Passed health inspection", "30% savings vs. previous vendor", "Zero complaints from patients"],
+      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600"
+    },
+    {
+      id: 3,
+      title: "Apartment Complex Takeover",
+      client: "Boutique Property Manager",
+      location: "Hoboken, NJ",
+      size: "50 units",
+      challenge: "Property manager needed reliable common area cleaning after previous vendor became unreliable.",
+      solution: "Set up twice-weekly cleaning schedule with photo verification and direct communication channel.",
+      results: ["100% on-time service", "Tenant complaints dropped to zero", "Renewed for year 2"],
+      image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600"
+    }
+  ];
       challenge: "Meet Joint Commission standards while reducing healthcare-associated infections and staying within budget.",
       solution: "Developed custom protocols aligned with CDC guidelines. Implemented UV-C disinfection for high-risk areas and real-time quality monitoring.",
       results: ["50% reduction in HAIs", "Passed Joint Commission audit", "35% cost savings"],
