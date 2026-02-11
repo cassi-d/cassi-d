@@ -36,8 +36,7 @@ const HomePage = () => {
   ];
 
   const stats = [
-    { number: '10+', label: 'Projects Completed' },
-    { number: '3+', label: 'Years Experience' },
+    { number: '100%', label: 'Client Satisfaction' },
     { number: '24/7', label: 'Emergency Response' },
   ];
 
@@ -71,8 +70,8 @@ const HomePage = () => {
               </div>
               
               <p className="text-lg text-slate-300 max-w-xl animate-fade-in-up animation-delay-100">
-                Reliable, insured, and contract-ready cleaning solutions for commercial properties, 
-                municipalities, and public spaces.
+                A fresh approach to commercial cleaning. We bring energy, attention to detail, 
+                and modern solutions to every job—big or small.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-200">
@@ -123,14 +122,14 @@ const HomePage = () => {
                     className="w-full h-48 object-cover rounded-xl shadow-2xl"
                   />
                   <div className="bg-sky-500 rounded-xl p-6 text-white">
-                    <p className="font-['Barlow_Condensed'] font-bold text-3xl">3+</p>
-                    <p className="text-sm opacity-90">Years of Excellence</p>
+                    <p className="font-['Barlow_Condensed'] font-bold text-3xl">100%</p>
+                    <p className="text-sm opacity-90">Satisfaction Rate</p>
                   </div>
                 </div>
                 <div className="space-y-4 pt-8">
                   <div className="bg-green-600 rounded-xl p-6 text-white">
-                    <p className="font-['Barlow_Condensed'] font-bold text-3xl">100%</p>
-                    <p className="text-sm opacity-90">Client Satisfaction</p>
+                    <p className="font-['Barlow_Condensed'] font-bold text-3xl">NJ</p>
+                    <p className="text-sm opacity-90">Based & Growing</p>
                   </div>
                   <img 
                     src="https://images.unsplash.com/photo-1700809888987-cf2b29ecbd2c?w=400"
@@ -154,9 +153,9 @@ const HomePage = () => {
                 Who We Are
               </h2>
               <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                We provide dependable commercial, street, and specialty cleaning services across 
-                New Jersey. Our team supports offices, retail spaces, government facilities, and 
-                public areas with consistent, high-quality results you can trust.
+                We're a New Jersey-based cleaning startup on a mission to raise the bar for 
+                commercial cleaning. We combine hustle, reliability, and eco-friendly practices 
+                to deliver results that speak for themselves.
               </p>
               <ul className="space-y-4">
                 {[
@@ -183,8 +182,8 @@ const HomePage = () => {
                 className="rounded-xl shadow-2xl w-full"
               />
               <div className="absolute -bottom-6 -left-6 bg-slate-900 text-white rounded-xl p-6 shadow-xl">
-                <p className="font-['Barlow_Condensed'] font-bold text-2xl">Government Ready</p>
-                <p className="text-slate-400 text-sm">Contract-ready documentation</p>
+                <p className="font-['Barlow_Condensed'] font-bold text-2xl">Fresh Approach</p>
+                <p className="text-slate-400 text-sm">Modern cleaning solutions</p>
               </div>
             </div>
           </div>
