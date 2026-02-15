@@ -155,9 +155,9 @@ const HomePage = () => {
                 Who We Are
               </h2>
               <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                We're a New Jersey-based cleaning startup on a mission to raise the bar for 
-                commercial cleaning. We combine hustle, reliability, and eco-friendly practices 
-                to deliver results that speak for themselves.
+                We provide dependable commercial, street, and specialty cleaning services across 
+                New Jersey. Our team supports offices, retail spaces, government facilities, and 
+                public areas with consistent, high-quality results you can trust.
               </p>
               <ul className="space-y-4">
                 {[
