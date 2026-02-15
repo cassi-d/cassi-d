@@ -36,6 +36,8 @@ const HomePage = () => {
   ];
 
   const stats = [
+    { number: '10+', label: 'Projects Completed' },
+    { number: '3+', label: 'Years Experience' },
     { number: '100%', label: 'Client Satisfaction' },
     { number: '24/7', label: 'Emergency Response' },
   ];
