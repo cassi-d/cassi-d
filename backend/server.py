@@ -23,7 +23,7 @@ db = client[os.environ['DB_NAME']]
 # Resend configuration
 resend.api_key = os.environ.get('RESEND_API_KEY')
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL', 'onboarding@resend.dev')
-NOTIFY_EMAIL = 'basscass858@gmail.com'
+NOTIFY_EMAIL = 'info@dirdia.com'
 
 # Create the main app without a prefix
 app = FastAPI()
