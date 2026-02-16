@@ -1,0 +1,11 @@
+# Dirdia - Commercial Cleaning Services
+# https://dirdia.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://dirdia.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
