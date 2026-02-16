@@ -13,6 +13,7 @@ export const Navbar = () => {
     { name: 'Industries', path: '/industries' },
     { name: 'Why Choose Us', path: '/why-choose-us' },
     { name: 'Portfolio', path: '/portfolio' },
+    { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ];
 
