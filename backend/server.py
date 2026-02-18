@@ -21,7 +21,8 @@ client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
 # Resend configuration
-resend.api_key = os.environ.get('RESEND_API_KEY')
+RESEND_API_KEY = os.environ.get('RESEND_API_KEY', 're_ZS44koga_5Yf65QUS2QoAyqhpaQ7FK71U')
+resend.api_key = RESEND_API_KEY
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL', 'noreply@dirdia.com')
 NOTIFY_EMAIL = os.environ.get('NOTIFY_EMAIL', 'info@dirdia.com')
 
