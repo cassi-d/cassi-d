@@ -85,16 +85,6 @@ class GalleryItem(BaseModel):
 async def root():
     return {"message": "Dirdia API"}
 
-@api_router.get("/debug/email-config")
-async def debug_email_config():
-    """Debug endpoint to check email configuration (remove in production)"""
-    return {
-        "resend_api_key_set": bool(resend.api_key),
-        "resend_api_key_prefix": resend.api_key[:10] + "..." if resend.api_key else None,
-        "sender_email": SENDER_EMAIL,
-        "notify_email": NOTIFY_EMAIL
-    }
-
 # Contact endpoints
 @api_router.post("/contact", response_model=ContactSubmission)
 async def create_contact(input: ContactSubmissionCreate):
