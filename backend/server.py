@@ -85,6 +85,16 @@ class GalleryItem(BaseModel):
 async def root():
     return {"message": "Dirdia API"}
 
+@api_router.get("/debug/email-config")
+async def debug_email_config():
+    """Debug endpoint to check email configuration (remove in production)"""
+    return {
+        "resend_api_key_set": bool(resend.api_key),
+        "resend_api_key_prefix": resend.api_key[:10] + "..." if resend.api_key else None,
+        "sender_email": SENDER_EMAIL,
+        "notify_email": NOTIFY_EMAIL
+    }
+
 # Contact endpoints
 @api_router.post("/contact", response_model=ContactSubmission)
 async def create_contact(input: ContactSubmissionCreate):
@@ -94,6 +104,8 @@ async def create_contact(input: ContactSubmissionCreate):
     
     # Send email notification
     try:
+        logger.info(f"Attempting to send email. API Key set: {bool(resend.api_key)}, Sender: {SENDER_EMAIL}, To: {NOTIFY_EMAIL}")
+        
         html_content = f"""
         <html>
         <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -141,8 +153,8 @@ async def create_contact(input: ContactSubmissionCreate):
             "html": html_content
         }
         
-        await asyncio.to_thread(resend.Emails.send, params)
-        logger.info(f"Email notification sent for contact: {input.name}")
+        result = await asyncio.to_thread(resend.Emails.send, params)
+        logger.info(f"Email sent successfully for contact: {input.name}, Result: {result}")
     except Exception as e:
         logger.error(f"Failed to send email notification: {str(e)}")
         # Don't fail the request if email fails - contact is still saved
