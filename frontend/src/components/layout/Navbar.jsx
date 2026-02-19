@@ -61,7 +61,7 @@ export const Navbar = () => {
                 className="bg-sky-500 hover:bg-slate-900 text-white shadow-lg shadow-sky-500/20"
                 data-testid="nav-quote-btn"
               >
-                Request Quote
+                Request Free Quote
               </Button>
             </Link>
           </div>
@@ -109,7 +109,7 @@ export const Navbar = () => {
                 </a>
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
                   <Button className="w-full bg-sky-500 hover:bg-slate-900 text-white">
-                    Request Quote
+                    Request Free Quote
                   </Button>
                 </Link>
               </div>

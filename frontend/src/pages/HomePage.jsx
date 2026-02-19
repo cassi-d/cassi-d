@@ -84,7 +84,7 @@ const HomePage = () => {
                     data-testid="hero-quote-btn"
                   >
                     <Sparkles className="w-5 h-5 mr-2" />
-                    Request a Quote
+                    Request a Free Quote
                   </Button>
                 </Link>
                 <Link to="/contact?type=walkthrough">
@@ -284,7 +284,7 @@ const HomePage = () => {
                 className="w-full sm:w-auto bg-sky-500 hover:bg-slate-900 text-white shadow-lg shadow-sky-500/20 px-8"
                 data-testid="cta-quote-btn"
               >
-                Request a Quote
+                Request a Free Quote
               </Button>
             </Link>
             <a href="tel:+12404967636">

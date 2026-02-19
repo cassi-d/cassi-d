@@ -36,7 +36,7 @@ const ContactPage = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const serviceTypes = [
-    { value: 'quote', label: 'Request a Quote' },
+    { value: 'quote', label: 'Request a Free Quote' },
     { value: 'walkthrough', label: 'Schedule a Walkthrough' },
     { value: 'commercial', label: 'Commercial Cleaning' },
     { value: 'street', label: 'Street Cleaning' },
@@ -295,7 +295,7 @@ const ContactPage = () => {
                           ) : (
                             <>
                               <Send className="w-4 h-4 mr-2" />
-                              Request a Quote
+                              Request a Free Quote
                             </>
                           )}
                         </Button>

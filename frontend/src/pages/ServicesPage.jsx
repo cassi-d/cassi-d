@@ -184,7 +184,7 @@ const ServicesPage = () => {
                       </ul>
                       <Link to="/contact" className="block mt-8">
                         <Button className="w-full bg-sky-500 hover:bg-sky-600 text-white">
-                          Get a Quote
+                          Get a Free Quote
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
                       </Link>
