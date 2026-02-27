@@ -17,6 +17,7 @@ import {
 } from '../components/ui/select';
 import { toast } from 'sonner';
 import axios from 'axios';
+import SEO from '../components/SEO';
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
@@ -100,6 +101,12 @@ const ContactPage = () => {
 
   return (
     <div data-testid="contact-page">
+      <SEO 
+        title="Contact Us - Free Quote"
+        description="Contact Dirdia for a free commercial cleaning quote in New Jersey. Call (240) 496-7636 or fill out our form. Veteran owned, licensed & insured cleaning services."
+        keywords="contact cleaning company NJ, free cleaning quote, commercial cleaning estimate, cleaning services New Jersey, office cleaning quote"
+        canonical="https://dirdia.com/contact"
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-slate-900">
         <div 

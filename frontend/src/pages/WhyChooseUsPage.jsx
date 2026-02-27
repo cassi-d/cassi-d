@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import SEO from '../components/SEO';
 
 const WhyChooseUsPage = () => {
   const trustReasons = [
@@ -121,6 +122,12 @@ const WhyChooseUsPage = () => {
 
   return (
     <div data-testid="why-choose-us-page">
+      <SEO 
+        title="Why Choose Dirdia - Certifications & Compliance"
+        description="Dirdia is veteran owned, licensed, bonded & insured with $2M liability coverage. OSHA compliant, background-checked staff, and eco-friendly Green Seal certified products."
+        keywords="veteran owned cleaning company, licensed insured cleaning NJ, OSHA compliant cleaning, bonded cleaning service, eco-friendly cleaning, Green Seal certified"
+        canonical="https://dirdia.com/why-choose-us"
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-slate-900">
         <div 
