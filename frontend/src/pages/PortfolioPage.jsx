@@ -7,6 +7,7 @@ import {
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
+import SEO from '../components/SEO';
 
 const PortfolioPage = () => {
   const [activeGalleryIndex, setActiveGalleryIndex] = useState(0);
@@ -111,6 +112,12 @@ const PortfolioPage = () => {
 
   return (
     <div data-testid="portfolio-page">
+      <SEO 
+        title="Portfolio - Testimonials & Case Studies"
+        description="See Dirdia's cleaning results. Client testimonials, case studies, and before/after photos from commercial cleaning projects across New Jersey."
+        keywords="cleaning company reviews NJ, commercial cleaning testimonials, cleaning case studies, before after cleaning photos, janitorial service reviews"
+        canonical="https://dirdia.com/portfolio"
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-slate-900">
         <div 

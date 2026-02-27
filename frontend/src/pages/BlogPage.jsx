@@ -4,6 +4,7 @@ import { Calendar, ArrowRight, Tag } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import axios from 'axios';
+import SEO from '../components/SEO';
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
@@ -36,6 +37,12 @@ const BlogPage = () => {
 
   return (
     <div data-testid="blog-page">
+      <SEO 
+        title="Blog - Cleaning Industry Insights"
+        description="Expert tips on commercial cleaning, compliance guides, and industry insights. Learn about cleaning best practices for offices, medical facilities, and more."
+        keywords="commercial cleaning blog, cleaning industry tips, janitorial best practices, office cleaning guide, cleaning compliance"
+        canonical="https://dirdia.com/blog"
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-slate-900">
         <div 
