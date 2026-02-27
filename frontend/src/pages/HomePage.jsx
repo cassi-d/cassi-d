@@ -46,6 +46,12 @@ const HomePage = () => {
 
   return (
     <div data-testid="home-page">
+      <SEO 
+        title="Commercial & Street Cleaning Services in New Jersey"
+        description="Dirdia provides professional commercial cleaning, office cleaning, street sweeping, and specialty cleaning services across New Jersey. Veteran owned, licensed & insured. Get a free quote today!"
+        keywords="commercial cleaning NJ, office cleaning New Jersey, street sweeping NJ, janitorial services, veteran owned cleaning company, eco-friendly cleaning, industrial cleaning NJ, medical facility cleaning"
+        canonical="https://dirdia.com/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center" data-testid="hero-section">
         {/* Background Image */}
