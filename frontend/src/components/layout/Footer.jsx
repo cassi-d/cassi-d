@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Building2, Phone, Mail, MapPin, Facebook, Linkedin, Twitter } from 'lucide-react';
+import { Building2, Phone, Mail, MapPin, Facebook, Linkedin, Instagram } from 'lucide-react';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,6 +24,15 @@ export const Footer = () => {
             </p>
             <div className="flex items-center gap-4">
               <a 
+                href="https://www.instagram.com/dirdia_" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-pink-500 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a 
                 href="#" 
                 className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-sky-500 transition-colors"
                 aria-label="Facebook"
@@ -36,13 +45,6 @@ export const Footer = () => {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-sky-500 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>
