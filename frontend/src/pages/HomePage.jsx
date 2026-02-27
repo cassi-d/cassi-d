@@ -9,6 +9,7 @@ import { Card, CardContent } from '../components/ui/card';
 const HomePage = () => {
   const trustBadges = [
     { icon: Shield, label: 'Licensed & Insured', color: 'text-sky-500' },
+    { icon: Award, label: 'Veteran Owned', color: 'text-red-500' },
     { icon: Award, label: 'Minority-Owned', color: 'text-green-600' },
     { icon: Users, label: 'Small Business (SBE)', color: 'text-sky-500' },
     { icon: Leaf, label: 'Eco-Friendly', color: 'text-green-600' },

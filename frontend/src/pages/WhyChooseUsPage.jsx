@@ -50,6 +50,12 @@ const WhyChooseUsPage = () => {
     },
     { 
       icon: Award, 
+      name: 'Veteran Owned',
+      detail: 'VOB Certified',
+      color: 'bg-red-500'
+    },
+    { 
+      icon: Award, 
       name: 'Minority-Owned Business',
       detail: 'MBE Certified',
       color: 'bg-purple-500'
