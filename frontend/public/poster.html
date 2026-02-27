@@ -203,6 +203,31 @@
             box-shadow: 0 10px 30px rgba(14, 165, 233, 0.4);
             position: relative;
             z-index: 1;
+            margin-bottom: 25px;
+        }
+        
+        .qr-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .qr-code {
+            width: 100px;
+            height: 100px;
+            background: white;
+            padding: 8px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .qr-label {
+            color: #94a3b8;
+            font-size: 12px;
+            margin-top: 8px;
+            font-weight: 500;
         }
         
         .nj-badge {
@@ -267,6 +292,11 @@
         </div>
         
         <div class="cta">Free Quotes Available</div>
+        
+        <div class="qr-section">
+            <img src="https://customer-assets.emergentagent.com/job_cleanstreets-nj/artifacts/znr9bxsh_qr-code.png" alt="QR Code" class="qr-code">
+            <span class="qr-label">Scan for Website</span>
+        </div>
         
         <div class="nj-badge">Serving All of NJ</div>
     </div>
