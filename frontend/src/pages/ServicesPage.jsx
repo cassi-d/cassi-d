@@ -7,6 +7,7 @@ import {
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
+import SEO from '../components/SEO';
 
 const ServicesPage = () => {
   const commercialServices = [
@@ -87,6 +88,12 @@ const ServicesPage = () => {
 
   return (
     <div data-testid="services-page">
+      <SEO 
+        title="Commercial Cleaning Services"
+        description="Professional commercial cleaning, office cleaning, street sweeping, pressure washing, and post-construction cleanup services in New Jersey. 24/7 emergency response available."
+        keywords="commercial cleaning services NJ, office cleaning, street sweeping, pressure washing, floor stripping, post-construction cleanup, janitorial services New Jersey"
+        canonical="https://dirdia.com/services"
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-slate-900" data-testid="services-hero">
         <div 

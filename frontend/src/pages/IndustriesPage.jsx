@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import SEO from '../components/SEO';
 
 const IndustriesPage = () => {
   const industries = [
@@ -57,6 +58,12 @@ const IndustriesPage = () => {
 
   return (
     <div data-testid="industries-page">
+      <SEO 
+        title="Industry-Specific Cleaning Solutions"
+        description="Specialized cleaning services for offices, medical facilities, schools, industrial sites, and retail stores in New Jersey. Industry-compliant protocols and trained staff."
+        keywords="office cleaning NJ, medical facility cleaning, school cleaning services, industrial cleaning, retail store cleaning, healthcare cleaning New Jersey"
+        canonical="https://dirdia.com/industries"
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-slate-900">
         <div 
